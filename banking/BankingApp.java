@@ -70,12 +70,14 @@ public class BankingApp {
                         }  
                         break;  
                     case 5:  
-                        System.out.println("Bank is Closed");  
-                        break;
-                    case 6:
-                    	System.out.println("Enter the account number to get the transaction details: ");
+			System.out.println("Enter the account number to get the transaction details: ");
                     	ac_no=sc.next();
                     	TransactionDetails.showMiniStatement(ac_no);
+				break;
+                        
+                    case 6:
+                    	System.out.println("Bank is Closed");  
+                        break;
                 }  
             }  
             while (ch != 6);  
